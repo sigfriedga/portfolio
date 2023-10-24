@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Mi Portfolio</title>
   </head>
+
   <body>
     <!--Hero-->
     <div class="hero">
@@ -28,15 +29,105 @@
     </div>
     <div class="work-resume container">
       <div class="about">
-        <h3>About</h3>
-        <div class="about-text" id="text-toggle">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-  nisi ut aliquip ex ea commodo consequat.
-  <span class="show-more" id="show-more">Mostrar más</span>
-</div>
+        <h3 class="heading-2">About</h3>
+        <div class="about-text" id="about-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore
+            <span id="dots">...</span>
+            <span id="more-text">
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </span>
+          </p>
+          <button class="about-show-more" id="show-more" onclick="aboutShowText()">
+            Show more
+          </button>
+        </div>
       </div>
+      <!--Experience-->
+      <div class="experience">
+        <h3 class="heading-2">Experience</h3>
+        <!--WorkCard-->
+        <div class="work-card">
+          <div class="work-logo">
+            <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+          </div>
+          <div class="work-content">
+            <h4 class="work-title heading-4">Angular Developer</h4>
+            <p class="work-date">Alicante 2023 - Present</p>
+          </div>
+          <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+          <!-- The Modal -->
+          <div id="work-modal" class="work-modal">
+            <div class="work-modal-content">
+              <span class="close">&times;</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End-WorkCard-->
+                <!--WorkCard-->
+        <div class="work-card">
+          <div class="work-logo">
+            <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+          </div>
+          <div class="work-content">
+            <h4 class="work-title heading-4">Angular Developer</h4>
+            <p class="work-date">Alicante 2023 - Present</p>
+          </div>
+          <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+          <!-- The Modal -->
+          <div id="work-modal" class="work-modal">
+            <div class="work-modal-content">
+              <span class="close">&times;</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End-WorkCard-->
+                <!--WorkCard-->
+        <div class="work-card">
+          <div class="work-logo">
+            <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+          </div>
+          <div class="work-content">
+            <h4 class="work-title heading-4">Angular Developer</h4>
+            <p class="work-date">Alicante 2023 - Present</p>
+          </div>
+          <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+          <!-- The Modal -->
+          <div id="work-modal" class="work-modal">
+            <div class="work-modal-content">
+              <span class="close">&times;</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--End-WorkCard-->
+      </div>
+      <!--End-Experience-->
+
+      
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

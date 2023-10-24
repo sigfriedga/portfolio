@@ -26,9 +26,10 @@ body {
 } */
 
 .container {
-    width: 90%;
+    width: 80%;
     height: 60%;
-    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -67,15 +68,26 @@ margin: 6%;
     margin-bottom: 30px;
 }
 
+.heading-2 {
+    color:rgb(252, 252, 252);
+    height: 20px;
+    font-size: 18px;
+}
+
 .heading-3 {
     color:rgb(252, 252, 252);
-    width: 350px;
-    height: 20px;
+    height: 18px;
     font-size: 16px;
 }
 
+.heading-4 {
+    color:rgb(252, 252, 252);
+    font-size: 14px;
+    margin: 0;
+}
+
 .contact {
-    width: 92%;
+    width: 89%;
     height: 50px;
     border-radius: 25px;
     border: none;
@@ -83,7 +95,7 @@ margin: 6%;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: -15px 5px 0 15px;
+    margin: -15px 20px 0 20px;
     padding-left: 5px;
     position: absolute;
     background-color: rgb(40, 39, 42);
@@ -93,7 +105,7 @@ margin: 6%;
     width: 80px;
     height: 22px;
     border: none;
-    color: rgb(67, 66, 68);
+    color: rgb(127, 127, 129);
     font-size: 16px;
     text-decoration: none;
     border-radius: 25px;
@@ -104,26 +116,111 @@ margin: 6%;
 .contact a:hover {
     background-color: rgb(115, 114, 116);
     color: rgb(252, 252, 252); 
-    
 }
 
 /*About*/
-.about {
+.work-resume {
+    background-color: rgb(40, 39, 42);
+    margin-top: 43px;
+    height: 600px;
+}
+
+.about h3 {
     color: rgb(252, 252, 252);
 }
-
-.about-text {
-  max-height: 4.5em; /* Altura máxima de 3 líneas */
-  overflow: hidden;
-  position: relative;
+.about p{
+    color: rgb(127, 127, 129);
 }
 
-.show-more {
-  color: blue;
+.about-show-more {
+    border: none;
+    background: none;
+    color: rgb(26, 138, 243); 
+}
+
+#more-text {
+    display: none;
+}
+
+/*Work Cards*/
+
+.work-card {
+    display: flex;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.work-logo img {
+  width: 50px;
+  margin: 5px 10px 5px 0px;
+  border-radius: 10%;
+}
+
+.work-content {
+    width: 50%;
+    display: block;
+    max-height: 25%;
+}
+.work-title {
+    margin-top: 10px;
+}
+
+.work-date {
+    font-size: 12px;
+    color: rgb(127, 127, 129);;
+}
+
+.work-details {
+  display: none; /* Inicialmente oculto */
+}
+
+.work-modal-btn {
+  color: rgb(26, 138, 243); 
+  border: none;
+  background: none;
+  height: 40px;
+  cursor: pointer;
+  font-size: 12px;
+  align-content: end;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/*MODAL*/
+.work-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.work-modal-content {
+  background-color: rgb(252, 252, 252);
+  margin: 50% auto;
+  padding: 20px;
+  border: 1px solid rgb(252, 252, 252);
+  border-radius: 25px;
+  width: 80%; 
+}
+
+.close {
+  color: rgb(26, 138, 243); 
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
-
-
-
 
 
