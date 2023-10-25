@@ -27,9 +27,9 @@ body {
 
 .container {
     width: 80%;
-    height: 60%;
+    height: 90%;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 0;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -44,20 +44,37 @@ body {
 
 
 .nav-bar img {
-     width: 30px;
+    width: 30px;
 }
 
 
 .menu-brg {
-margin: 6%;
+    margin: 10% 3%;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.7);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 70px;
 }
+
 .menu-chat {
-    margin: 6% 5%;
+    margin: 10% 7%;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.7);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 70px;
+
 }
 
 .card-name {
     display: grid;
-    height: 90vh;
+    height: 20vh;
+    bottom: -300px;
+    position: relative;
+    margin-left: -10px;
 }
 
 .headding-1 {
@@ -69,19 +86,19 @@ margin: 6%;
 }
 
 .heading-2 {
-    color:rgb(252, 252, 252);
+    color: rgb(252, 252, 252);
     height: 20px;
     font-size: 18px;
 }
 
 .heading-3 {
-    color:rgb(252, 252, 252);
+    color: rgb(252, 252, 252);
     height: 18px;
     font-size: 16px;
 }
 
 .heading-4 {
-    color:rgb(252, 252, 252);
+    color: rgb(252, 252, 252);
     font-size: 14px;
     margin: 0;
 }
@@ -115,7 +132,7 @@ margin: 6%;
 
 .contact a:hover {
     background-color: rgb(115, 114, 116);
-    color: rgb(252, 252, 252); 
+    color: rgb(252, 252, 252);
 }
 
 /*About*/
@@ -128,14 +145,15 @@ margin: 6%;
 .about h3 {
     color: rgb(252, 252, 252);
 }
-.about p{
+
+.about p {
     color: rgb(127, 127, 129);
 }
 
 .about-show-more {
     border: none;
     background: none;
-    color: rgb(26, 138, 243); 
+    color: rgb(26, 138, 243);
 }
 
 #more-text {
@@ -151,9 +169,9 @@ margin: 6%;
 }
 
 .work-logo img {
-  width: 50px;
-  margin: 5px 10px 5px 0px;
-  border-radius: 10%;
+    width: 50px;
+    margin: 5px 10px 5px 0px;
+    border-radius: 10%;
 }
 
 .work-content {
@@ -161,66 +179,75 @@ margin: 6%;
     display: block;
     max-height: 25%;
 }
+
 .work-title {
     margin-top: 10px;
 }
 
 .work-date {
     font-size: 12px;
-    color: rgb(127, 127, 129);;
+    color: rgb(127, 127, 129);
 }
 
 .work-details {
-  display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
 }
 
 .work-modal-btn {
-  color: rgb(26, 138, 243); 
-  border: none;
-  background: none;
-  height: 40px;
-  cursor: pointer;
-  font-size: 12px;
-  align-content: end;
-  margin-left: 10px;
-  margin-top: 10px;
+    color: rgb(26, 138, 243);
+    border: none;
+    background: none;
+    height: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    align-content: end;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /*MODAL*/
 .work-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 .work-modal-content {
-  background-color: rgb(252, 252, 252);
-  margin: 50% auto;
-  padding: 20px;
-  border: 1px solid rgb(252, 252, 252);
-  border-radius: 25px;
-  width: 80%; 
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-color: rgb(40, 39, 42);
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 25px;
+    width: 80%;
 }
 
 .close {
-  color: rgb(26, 138, 243); 
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: rgb(26, 138, 243);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-
