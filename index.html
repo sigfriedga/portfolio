@@ -1,90 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Mi Portfolio</title>
-  </head>
 
-  <body>
-    <!--Hero-->
-    <div class="hero">
-      <div class="container">
-        <div class="nav-bar">
-          <div class="menu-chat"><img src="img/svg/chat.svg" alt="chat" /></div>
-          <div class="menu-brg"><img src="img/svg/menu.svg" alt="menu" /></div>
-        </div>
-        <div class="card-name">
-          <h1 class="headding-1">Sigfried Girardot</h1>
-          <h2 class="heading-3">Angular Front End Developer</h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Mi Portfolio</title>
+</head>
+
+<body>
+  <!--Hero-->
+  <div class="hero">
+    <div class="container">
+      <div class="nav-bar">
+        <div class="menu-chat"><img src="img/svg/chat.svg" alt="chat" /></div>
+        <div class="menu-brg"><img src="img/svg/menu.svg" alt="menu" /></div>
+      </div>
+      <div class="card-name">
+        <h1 class="headding-1">Sigfried Girardot</h1>
+        <h2 class="heading-3">Angular Front End Developer</h2>
       </div>
     </div>
-    <!--End-Hero-->
-    <div class="contact">
-      <a href="">Chat</a>
-      <a href="">Resume</a>
-      <a href="">Media</a>
-    </div>
-    <div class="work-resume container">
-      <div class="about">
-        <h3 class="heading-2">About</h3>
-        <div class="about-text" id="about-text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore
-            <span id="dots">...</span>
-            <span id="more-text">
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </span>
-          </p>
-          <button
-            class="about-show-more"
-            id="show-more"
-            onclick="aboutShowText()"
-          >
-            Show more
-          </button>
-        </div>
+  </div>
+  <!--End-Hero-->
+  <div class="contact">
+    <a href="">Chat</a>
+    <a href="">Resume</a>
+    <a href="">Media</a>
+  </div>
+  <div class="work-resume container">
+    <div class="about">
+      <h3 class="heading-2">About</h3>
+      <div class="about-text" id="about-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore
+          <span id="dots">...</span>
+          <span id="more-text">
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </span>
+        </p>
+        <button class="about-show-more" id="show-more" onclick="aboutShowText()">
+          Show more
+        </button>
       </div>
-      <!--Experience-->
-      <div class="experience">
-        <h3 class="heading-2">Experience</h3>
-        <!--WorkCard-->
-        <div class="work-card">
-          <div class="work-logo">
-            <img src="img/nttData-logo.jpg" alt="nttData-logo" />
-          </div>
-          <div class="work-content">
-            <h4 class="work-title heading-4">Angular Developer</h4>
-            <p class="work-date">Alicante 2023 - Present</p>
-          </div>
-          <button class="work-modal-btn" id="work-modal-btn">Show more</button>
-          <!-- The Modal -->
-          <div id="work-modal" class="work-modal">
-            <div class="work-modal-content">
-              <span class="close">&times;</span>
-              <div class="modal-content">
-                <h3>Angular Developer</h3>
-                <span>NTT Data (2023)</span>
-                <p>
-                  Some text in the Modal.. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                  ut labore et dolore Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                  dolore Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.
-                </p>
-              </div>
+    </div>
+    <!--Experience-->
+    <div class="experience">
+      <h3 class="heading-2">Experience</h3>
+      <!--WorkCard-->
+      <div class="work-card">
+        <div class="work-logo">
+          <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+        </div>
+        <div class="work-content">
+          <h4 class="work-title heading-4">Angular Developer</h4>
+          <p class="work-date">Alicante 2023 - Present</p>
+        </div>
+        <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+        <!-- The Modal -->
+        <div id="work-modal" class="work-modal">
+          <div class="work-modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3>Angular Developer</h3>
+              <span>NTT Data (2023)</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                ut labore et dolore Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
             </div>
           </div>
         </div>
-        <!--End-WorkCard-->
       </div>
-      <!--End-Experience-->
+      <!--End-WorkCard-->
+      <!--WorkCard-->
+      <div class="work-card">
+        <div class="work-logo">
+          <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+        </div>
+        <div class="work-content">
+          <h4 class="work-title heading-4">Angular Developer</h4>
+          <p class="work-date">Alicante 2023 - Present</p>
+        </div>
+        <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+        <!-- The Modal -->
+        <div id="work-modal" class="work-modal">
+          <div class="work-modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3>Angular Developer</h3>
+              <span>NTT Data (2023)</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                ut labore et dolore Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End-WorkCard-->
+      <!--WorkCard-->
+      <div class="work-card">
+        <div class="work-logo">
+          <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+        </div>
+        <div class="work-content">
+          <h4 class="work-title heading-4">Angular Developer</h4>
+          <p class="work-date">Alicante 2023 - Present</p>
+        </div>
+        <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+        <!-- The Modal -->
+        <div id="work-modal" class="work-modal">
+          <div class="work-modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3>Angular Developer</h3>
+              <span>NTT Data (2023)</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                ut labore et dolore Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End-WorkCard-->
+      <!--WorkCard-->
+      <div class="work-card">
+        <div class="work-logo">
+          <img src="img/nttData-logo.jpg" alt="nttData-logo" />
+        </div>
+        <div class="work-content">
+          <h4 class="work-title heading-4">Angular Developer</h4>
+          <p class="work-date">Alicante 2023 - Present</p>
+        </div>
+        <button class="work-modal-btn" id="work-modal-btn">Show more</button>
+        <!-- The Modal -->
+        <div id="work-modal" class="work-modal">
+          <div class="work-modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+              <h3>Angular Developer</h3>
+              <span>NTT Data (2023)</span>
+              <p>
+                Some text in the Modal.. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                ut labore et dolore Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End-WorkCard-->
     </div>
-    <script src="js/main.js"></script>
-  </body>
+    <!--End-Experience-->
+  </div>
+  <!--End-Resume-->
+  <!--End-Experience-->
+  <!--Lenguages-->
+  <div class="lenguages">
+    <!--Lenguaje-card-->
+    <div class="lenguage-card container">
+      <div class="lenguage-flag">
+        <img src="img/svg/es.svg" alt="es-flag" />
+      </div>
+      <div class="lenguage-text">
+        Level B1
+      </div>
+    </div>
+    <!--End-Lenguaje-card-->
+    <!--Lenguaje-card-->
+    <div class="lenguage-card container">
+      <div class="lenguage-flag">
+        <img src="img/svg/gb.svg" alt="es-flag" />
+      </div>
+      <div class="lenguage-text">
+        Level B1
+      </div>
+    </div>
+    <!--End-Lenguaje-card-->
+    <!--Lenguaje-card-->
+    <div class="lenguage-card container">
+      <div class="lenguage-flag">
+        <img src="img/svg/fr.svg" alt="es-flag" />
+      </div>
+      <div class="lenguage-text">
+        Level B1
+      </div>
+    </div>
+    <!--End-Lenguaje-card-->
+  </div>
+  <!--End-Lenguages-->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
