@@ -1,43 +1,31 @@
 const express = require('express');
-const path = require('path');
+const fetch = require('node-fetch'); 
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
+
+app.get('/datos-linkedin', async (req, res) => {
+  try {
+    const response = await fetch('https://api.linkedin.com/v2/userinfo', {
+      headers: {
+        'Authorization': 'Bearer YUR_TOKEN'
+      }
+    });
+
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error al obtener datos de LinkedIn:', error);
+    res.status(500).send('Error al obtener datos de LinkedIn');
+  }
+});
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(3000, () => {
-  console.log('Servidor iniciado en http://localhost:3000');
+app.listen(PORT, () => {
+  console.log(`Servidor iniciado en http://localhost:${PORT}`);
 });
-
-//Call Linkedin API
-
-const clientId = 'TU_CLIENT_ID'; // Reemplaza con tu Client ID
-const clientSecret = 'TU_CLIENT_SECRET'; // Reemplaza con tu Client Secret
-const accessToken = 'TOKEN'; // Reemplaza con tu Access Token (obtenido después de la autenticación)
-
-// URL de la API de LinkedIn que deseas consultar (por ejemplo, para obtener tu perfil)
-//const apiUrl = 'https://api.linkedin.com/v2/me';
-const apiUrl = 'https://api.linkedin.com/v2/userinfo';
-
-// Encabezados de autenticación
-const headers = {
-  'Authorization': `Bearer ${accessToken}`
-};
-
-// Hacer una solicitud GET a la API de LinkedIn
-fetch(apiUrl, {
-  method: 'GET',
-  headers: headers
-})
-  .then(response => response.json()) // Convertir la respuesta a JSON
-  .then(data => {
-    // Manipular los datos recibidos
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error al obtener datos:', error);
-  });
