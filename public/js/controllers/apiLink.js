@@ -1,14 +1,24 @@
 document.addEventListener('DOMContentLoaded', async function() {
   try {
-    const response = await fetch('/datos-linkedin'); // Hacer una solicitud al servidor
-    const data = await response.json(); // Convertir la respuesta a JSON
+    const response = await fetch('/datos-linkedin');
+    const data = await response.json();
+    console.log(data);
 
-    // Manipular los datos recibidos
-    const name = data.firstName.localized['en_US']; // Suponiendo que "firstName" es un campo en los datos de LinkedIn
+    const name = data.given_name;
 
-    // Actualizar el contenido en el HTML
-    document.getElementById('name').textContent = name; // Cambiar el contenido de un elemento en tu HTML
+    console.log(name);
+
+    document.getElementById('name').textContent = name;
+
+
+    
+    
   } catch (error) {
     console.error('Error al obtener datos:', error);
   }
 });
+
+// getPersonalInfo () {
+//     this.name = this.data.given_name;
+//     this.surname = this.data.family_name;
+// }

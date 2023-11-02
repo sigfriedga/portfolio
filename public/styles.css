@@ -283,3 +283,7 @@ body {
 .lenguage-text {
     color: var(--white);
 }
+
+.api-call-test {
+    color: #E3FDF5;
+}

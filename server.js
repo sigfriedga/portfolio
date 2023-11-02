@@ -6,16 +6,17 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.get('/datos-linkedin', async (req, res) => {
+// Request to Linkedin
+app.get('/linkedinData', async (req, res) => {
   try {
-    const response = await fetch('https://api.linkedin.com/v2/userinfo', {
+    const response = await fetch('https://api.linkedin.com/v2/me', {
       headers: {
-        'Authorization': 'Bearer YUR_TOKEN'
+        'Authorization': `Bearer {}`
       }
     });
 
-    const data = await response.json();
-    res.json(data);
+    const linkedinData = await response.json();
+    res.json(linkedinData);
   } catch (error) {
     console.error('Error al obtener datos de LinkedIn:', error);
     res.status(500).send('Error al obtener datos de LinkedIn');
